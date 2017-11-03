@@ -1,7 +1,7 @@
-% % <author>Vijeta Khare</author>
-% % <email>kharevijeta@gmail.com</email>
-% % <date>8-05-2017</date>
-% % <summary>Contains a charachter segmentation of Licence Plate Images</summary> 
+% % <author>Sauradip Nag</author>
+% % <email>sauradipnag95@gmail.com</email>
+% % <date>3-11-2017</date>
+% % <summary>Bib Bumber Detection from Torso</summary> 
 % %  All Right Reserved to Author
 
 % clear all;
