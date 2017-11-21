@@ -1,5 +1,6 @@
 function[gvf]=calc_neigh(gvf,initialX,initialY,initialTheta,angle,px,I_gray,bod,swd)
 step2=1;
+flag=1;
 [mag,dir]=imgradient(rgb2gray(bod));
 nextX = (round(initialX + cosd(initialTheta) * 1 * step2));
         nextY = (round(initialY + sind(initialTheta) * 1 * step2));
@@ -21,8 +22,9 @@ nextX = (round(initialX + cosd(initialTheta) * 1 * step2));
 %      initialX=xx;
 %      initialY=yy;
 %              end
-disp(initialX);
-disp(initialY);
+%disp(initialX);
+%disp(initialY);
+m=0;
     while( neigh_loop==1 )
        % while (neigh_loop==1)
             x=0;
@@ -53,7 +55,7 @@ disp(initialY);
             %pointOfRayY1 = zeros(maxStrokeWidth,1);
             swd1=swd;
             [flag2,gvf,initialX,initialY]=swt_neigh(initialX,initialY,initialTheta,angle,px,gvf,ms,N,I_gray,swd1,bod,1);  % find new swd for neighbour
-            disp(flag2);
+            %disp(flag2);
            if(flag2==1)
                neigh_loop=1; % flag set to find 8 neighbours i.e successful swd found
                break;

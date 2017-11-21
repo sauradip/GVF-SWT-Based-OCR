@@ -1,4 +1,6 @@
 function [flag2,gvf,initialX,initialY] = swt_neigh(initialX,initialY,initialTheta,angle,px,gvf,m,n,I_gray,swd,bod,isnei)
+
+disp('Stroke Width Started');
 step2=1;flag2=0;
 sizeOfRay2=1;
  pointOfRayX1 = zeros(350,1);
@@ -38,7 +40,7 @@ while step2<5 && flag2==0   % loop to calculate stroke width of neighbour and so
         if((abs(angle(initialX,initialY)+angle(nextX,nextY))<=10)  && sizeOfRay2<=swd && abs(I_gray(nextX,nextY)-I_gray(initialX,initialY))<=10 && I_gray(initialX,initialY)>230 && I_gray(initialX,initialY) < 245 )
              gvf(nextX,nextY)=1;
              gvf(initialX,initialY)=1;
-disp('yes');
+%disp('yes');
             % disp(round(px(nextX,nextY))+round(px(initialX,initialY)));
               
 %              for iii=1:sizeOfRay2
@@ -56,13 +58,13 @@ disp('yes');
            if((round(angle(nextX,nextY))+round(angle(initialX,initialY)))==0 )
              gvf(nextX,nextY)=1;
              gvf(initialX,initialY)=1;
-%              for iii=1:sizeOfRay2
+%              for iii=1:sizzeOfRay2
 %                  gvf(pointOfRayX1(iii),pointOfRayY1(iii))=1;
 %              end
-             disp('yes');
+            % disp('yes');
              flag2=1; % means one of the neighbour of initial seed has got a stroke width , so we must find 8 neighbour
           end 
         end
 end
-
+disp('Stroke Width Finished');
 end
