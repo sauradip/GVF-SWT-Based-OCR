@@ -13,8 +13,8 @@ Sample Result :
 
 Input Image :
 
-![alt text]https://github.com/sauradip/GVF-SWT-Based-OCR/blob/master/img/t1.jpg
+![alt text](https://github.com/sauradip/GVF-SWT-Based-OCR/blob/master/img/t1.jpg)
 
 Detected by my OCR :
 
-![alt text]https://github.com/sauradip/GVF-SWT-Based-OCR/blob/master/img/frame10.jpg
+![alt text](https://github.com/sauradip/GVF-SWT-Based-OCR/blob/master/img/frame10.jpg)
