@@ -9,3 +9,12 @@ For missing character , I am finding Orientation of components by Principal Comp
 
 My code gives around 80 % accuracy for images without tilted text , blurry text , lossy image , any hand/object over the text
 
+Sample Result : 
+
+Input Image :
+
+![alt text]https://github.com/sauradip/GVF-SWT-Based-OCR/blob/master/img/t1.jpg
+
+Detected by my OCR :
+
+![alt text]https://github.com/sauradip/GVF-SWT-Based-OCR/blob/master/img/frame10.jpg
